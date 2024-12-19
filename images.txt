@@ -1,6 +1,6 @@
 # 公有库
 nginx
-centos7
+centos:centos7
 python:alpine3.10
 
 # 私有库

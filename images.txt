@@ -1,7 +1,10 @@
 # 公有库
 nginx
+ubuntu
 centos:centos7
 python:alpine3.10
+postgres:16
+
 
 # 私有库
 pgvector/pgvector:pg16

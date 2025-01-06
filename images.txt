@@ -4,7 +4,7 @@ ubuntu
 centos:centos7
 python:alpine3.10
 postgres:16
-
+neo4j
 
 # 私有库
 pgvector/pgvector:pg16

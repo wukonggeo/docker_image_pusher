@@ -1,17 +1,19 @@
 # 公有库
+neo4j
 nginx
 ubuntu
+postgres:16
 centos:centos7
 python:alpine3.10
-postgres:16
-neo4j
+python:3.10-slim
+python:3.10-slim-bullseye
 
 # 私有库
+xhofe/alist:latest
+paradedb/paradedb
 pgvector/pgvector:pg16
 timescale/timescaledb-ha:pg16
 k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
-xhofe/alist:latest
-paradedb/paradedb
 
 # 指定架构
 # --platform=linux/arm64 xiaoyaliu/alist

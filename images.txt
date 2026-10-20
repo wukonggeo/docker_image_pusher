@@ -26,8 +26,8 @@ ghcr.io/dask/dask:latest
 ghcr.io/osgeo/gdal:ubuntu-small-latest
 
 # --- 缓存与网关 (高并发降本必需) ---
-varnish:stable-alpine
-jupyterhub/k8s-hub:latest
+varnish:stable
+jupyterhub/k8s-hub:4.1.0
 
 # --- Argo 自动化入库工作流 (选配) ---
 quay.io/argoproj/workflow-controller:latest

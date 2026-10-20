@@ -1,25 +1,48 @@
 # 公有库
-neo4j
-nginx
-ubuntu
-postgres:16
-centos:centos7
-debian:buster-slim
-debian:bullseye-slim
-python:alpine3.10
-python:3.10-slim
-python:3.10-slim-bullseye
-python:3.12-slim-bullseye
+# neo4j
+# nginx
+# ubuntu
+# postgres:16
+# centos:centos7
+# debian:buster-slim
+# debian:bullseye-slim
+# python:alpine3.10
+# python:3.10-slim
+# python:3.10-slim-bullseye
+# python:3.12-slim-bullseye
 redis:8.6-alpine
+nginx:1.26-alpine
+nginx:stable-alpine
 
 # 私有库
+# --- 遥感核心微服务 ---
 cgr.dev/chainguard/minio:latest
-vllm/vllm-openai:v0.7.3
-xhofe/alist:latest
-paradedb/paradedb
-pgvector/pgvector:pg16
-timescale/timescaledb-ha:pg16
-k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
+ghcr.io/developmentseed/titiler:latest
+ghcr.io/developmentseed/tipg:latest
+ghcr.io/stac-utils/stac-fastapi-pgstac:latest
+
+# --- 数据转换与计算 ---
+ghcr.io/dask/dask:latest
+osgeo/gdal:ubuntu-small-latest
+
+# --- 缓存与网关 (高并发降本必需) ---
+varnish:stable-alpine
+jupyterhub/k8s-hub:latest
+
+# --- Argo 自动化入库工作流 (选配) ---
+quay.io/argoproj/workflow-controller:latest
+quay.io/argoproj/argoexec:latest
+
+# --- 监控可观测性容器 ---
+prom/prometheus:latest
+grafana/grafana:latest
+
+# vllm/vllm-openai:v0.7.3
+# xhofe/alist:latest
+# paradedb/paradedb
+# pgvector/pgvector:pg16
+# timescale/timescaledb-ha:pg16
+# k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
 
 # 指定架构
 # --platform=linux/arm64 xiaoyaliu/alist

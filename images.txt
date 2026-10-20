@@ -23,7 +23,7 @@ ghcr.io/stac-utils/stac-fastapi-pgstac:latest
 
 # --- 数据转换与计算 ---
 ghcr.io/dask/dask:latest
-osgeo/gdal:ubuntu-small-latest
+ghcr.io/osgeo/gdal:ubuntu-small-latest
 
 # --- 缓存与网关 (高并发降本必需) ---
 varnish:stable-alpine

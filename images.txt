@@ -1,5 +1,5 @@
 # 公有库
-minio
+minio/minio
 neo4j
 nginx
 ubuntu

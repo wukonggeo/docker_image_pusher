@@ -1,5 +1,4 @@
 # 公有库
-minio/minio
 neo4j
 nginx
 ubuntu
@@ -14,6 +13,7 @@ python:3.12-slim-bullseye
 redis:8.6-alpine
 
 # 私有库
+cgr.dev/chainguard/minio:latest
 vllm/vllm-openai:v0.7.3
 xhofe/alist:latest
 paradedb/paradedb

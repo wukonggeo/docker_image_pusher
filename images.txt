@@ -10,33 +10,50 @@
 # python:3.10-slim
 # python:3.10-slim-bullseye
 # python:3.12-slim-bullseye
-redis:8.6-alpine
-nginx:1.26-alpine
-nginx:stable-alpine
+# redis:8.6-alpine
+# nginx:1.26-alpine
+# nginx:stable-alpine
 
 # 私有库
 # --- 遥感核心微服务 ---
-cgr.dev/chainguard/minio:latest
-ghcr.io/developmentseed/titiler:latest
-ghcr.io/developmentseed/tipg:latest
-ghcr.io/stac-utils/stac-fastapi-pgstac:latest
+# cgr.dev/chainguard/minio:latest
+# ghcr.io/developmentseed/titiler:latest
+# ghcr.io/developmentseed/tipg:latest
+# ghcr.io/stac-utils/stac-fastapi-pgstac:latest
 
 # --- 数据转换与计算 ---
-ghcr.io/dask/dask:latest
-ghcr.io/osgeo/gdal:ubuntu-small-latest
+# ghcr.io/dask/dask:latest
+# ghcr.io/osgeo/gdal:ubuntu-small-latest
 
 # --- 缓存与网关 (高并发降本必需) ---
-varnish:stable
-jupyterhub/k8s-hub:4.1.0
+# varnish:stable
+# jupyterhub/k8s-hub:4.1.0
 
 # --- Argo 自动化入库工作流 (选配) ---
-quay.io/argoproj/workflow-controller:latest
-quay.io/argoproj/argoexec:latest
+# quay.io/argoproj/workflow-controller:latest
+# quay.io/argoproj/argoexec:latest
 
 # --- 监控可观测性容器 ---
-prom/prometheus:latest
-grafana/grafana:latest
+# prom/prometheus:latest
+# grafana/grafana:latest
 
+# k8s-jupyter相关
+quay.io/jupyterhub/k8s-hub:4.4.4
+quay.io/jupyterhub/configurable-http-proxy:5.2.0
+quay.io/jupyterhub/k8s-network-tools:4.4.4
+quay.io/jupyterhub/k8s-image-awaiter:4.4.4
+quay.io/jupyterhub/k8s-secret-sync:4.4.4
+quay.io/jupyter/scipy-notebook:2026-09-01
+quay.io/jupyter/datascience-notebook:2026-09-01
+
+opengeohub/pygeo-ide:v3.12.3-intel-gdal3103
+
+registry.k8s.io/pause:3.10.1
+registry.k8s.io/kube-scheduler:v1.34.13
+
+
+
+# 其他
 # vllm/vllm-openai:v0.7.3
 # xhofe/alist:latest
 # paradedb/paradedb

@@ -38,19 +38,30 @@
 # grafana/grafana:latest
 
 # k8s-jupyter相关
-quay.io/jupyterhub/k8s-hub:4.4.4
-quay.io/jupyterhub/configurable-http-proxy:5.2.0
-quay.io/jupyterhub/k8s-network-tools:4.4.4
-quay.io/jupyterhub/k8s-image-awaiter:4.4.4
-quay.io/jupyterhub/k8s-secret-sync:4.4.4
-quay.io/jupyter/scipy-notebook:2026-09-01
-quay.io/jupyter/datascience-notebook:2026-09-01
+# quay.io/jupyterhub/k8s-hub:4.4.4
+# quay.io/jupyterhub/configurable-http-proxy:5.2.0
+# quay.io/jupyterhub/k8s-network-tools:4.4.4
+# quay.io/jupyterhub/k8s-image-awaiter:4.4.4
+# quay.io/jupyterhub/k8s-secret-sync:4.4.4
+# quay.io/jupyter/scipy-notebook:2026-09-01
+# quay.io/jupyter/datascience-notebook:2026-09-01
 
-opengeohub/pygeo-ide:v3.12.3-intel-gdal3103
+# opengeohub/pygeo-ide:v3.12.3-intel-gdal3103
 
-registry.k8s.io/pause:3.10.1
-registry.k8s.io/kube-scheduler:v1.34.13
+# registry.k8s.io/pause:3.10.1
+# registry.k8s.io/kube-scheduler:v1.34.13
 
+# csi-s3 + rclone
+cr.yandex/crp9ftr22d26age3hulg/yandex-cloud/csi-s3/csi-s3-driver:0.43.7
+rclone/rclone:1.68.2
+registry.k8s.io/sig-storage/csi-provisioner:v3.6.4
+registry.k8s.io/sig-storage/csi-node-driver-registrar:v2.10.1
+busybox:1.36.1
+
+# NAS-JuiceFS CSI
+juicedata/juicefs-csi-driver:v0.24.4
+juicedata/mount:ce-v1.3.4
+redis:8.6.8-alpine
 
 
 # 其他
